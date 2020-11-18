@@ -298,3 +298,21 @@ body
     bottom: 10px;
     right: 10px;
 }
+.prix
+{
+    position: relative;
+    left: 300px;
+    bottom: 20px;
+}
+.trait
+{
+    border-bottom: 3px solid #99E2D0;
+}
+@font-face {
+    font-family: 'ambleregular';
+    src: url('amble-regular-webfont.woff2') format('woff2'),
+         url('amble-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
