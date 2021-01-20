@@ -494,5 +494,9 @@ a
 h1
 {
     font-family: 'Shrikhand', cursive;
+<<<<<<< HEAD
     animation: fadein 2s;
+=======
+    animation: fadein 2s; 
+>>>>>>> 45150b935d9da332593ac1298a9feacc8e9cc238
 }
