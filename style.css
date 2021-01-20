@@ -1,62 +1,179 @@
 body
 {
+   
+    font-family: 'Roboto', sans-serif;
+    
+}
+#bloc-page
+{
     width: 380px;
+    flex-direction: column;
     margin:auto;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    animation-delay: 2s;
+}
+.entree
+{
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name:opacity;
+    
+}
+@keyframes opacity {
+    from {color: 0%;}
+    to {color: 100%;}
+  }
+
+.plat
+{
+    animation-duration: 3s;
+    animation-delay: 500ms;
+    animation-name: slidein;
 }
 
+.dessert
+{
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-name: slidein;
+}
+#bloc-menu1
+{
+    width: 380px;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+
+}
+#bloc-menu2
+{
+    width: 380px;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+ 
+}
+#bloc-menu3
+{
+    width: 380px;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+}
+#bloc-menu4
+{
+    width: 380px;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;  
+}
+.logo-menu
+{
+    
+    font-family: 'Shrikhand', cursive;
+    color: #343135;
+    width: 380px;
+    height: 20px;
+    display:flex;
+    position: relative;
+    
+}
+.titre
+{
+    width: 380px;
+    text-align: center;
+}
 .logo
 {
-    text-align: center;
+    width: 380px;
     height: 40px;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    color: #343135;
 }
 
 .fonction 
 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     padding-left: 10px;
 }
+#bloc-fonctionnement
+{
+    
+    width: 380px;
+    flex-direction: column;
+
+}
+
 
 .restau
 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em; 
     padding-left: 10px; 
 }
 .photo
 {
 
-    border-radius: 20px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
     position: relative;
     left: 10px;
 }
-.footer
+.bloc-footer
 {
-    background-color: black;
+    background-color: #343135;
     color: white;
-    height: 120px;
-    width:350px;
+    height: 200px;
+    max-width:370px;
     padding-left: 10px;
-    position: relative;
-    top: 100px;
+    flex-direction: column;
+    margin-top: 110px;
+}
+
+#bloc-footer-accueil
+{
+    background-color: #343135;
+    color: white;
+    height: 200px;
+    max-width:370px;
+    padding-left: 10px;
+    flex-direction: column;
+    margin-top:60px ;
 }
 .piedpage
 {
-     color: white;
-     height: 30px;
-     width:360px; 
+ 
      font-size: 40px;
-     padding-bottom: 20px;
-     background-color: black;
-     position: relative;
-     top:100px;
+     color:white;
+     font-family: 'Shrikhand', cursive;
+}
+#bloc-restaurants
+{
+   margin-bottom: 20px;
+   width: 380px;
+  
+   flex-direction: column;
+   background-color:#F8F8F8 ;
 }
 
 .paris
 {
-    background-color: #dfdfdf;
-    width: 380px;
+    background-color:#ebebec;
+    min-width: 380px;
     text-align: center;
-    height: 26px;
-    padding-top: 10px;
+    height: 30px;
+    align-content: center;
+    padding-top:10px;
+    
+}
+.carte
+{
+    height: 16px;
+    min-width: 5px;
+    
 }
 
 .reservation 
@@ -68,14 +185,35 @@ body
 .selection
 {
     font-size: 15px;
-    width: 380px;
+    min-width: 380px;
     text-align: center;
 }
 
+.explore 
+{ 
+    border: 1px#CF9AE5 solid; 
+    border-radius: 50px; 
+    box-shadow: 2px 2px 10px grey;
+    background-image: linear-gradient(#F37DE8 ,#9356DC); 
+    color: white;
+    max-width: 190px; 
+    height: 30px; 
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    top: 30px;
+    left: 90px;
+   
+} 
+
 .entete 
 { 
-    background-color:#efeff1 ;
-    height: 250px; 
+    max-width: 380px;
+    background-color:#F8F8F8 ;
+    height: 280px; 
+    flex-direction:column ;
+    
+    
 } 
 
 .totalfonction
@@ -83,104 +221,121 @@ body
     height: 400px;
 }
 
-.explore 
 
-{ 
-    border: 1px#CF9AE5 solid; 
-    border-radius: 50px; 
-    box-shadow: 2px 2px 10px grey;
-    background-image: linear-gradient(#F37DE8 ,#9356DC); 
-    color: white;
-    width: 200px; 
-    text-align: center; 
-    position: relative; 
-    left: 80px; 
-    top: 10px;  
-    height: 25px; 
-    padding-top: 5px;
-} 
 .buy
 {
     border: 1px#CF9AE5 solid; 
     border-radius: 50px; 
-    box-shadow: 2px 2px 10px grey;
+    box-shadow: 2px 2px 8px #E4E0E7;
     background-image: linear-gradient(#F37DE8 ,#9356DC); 
     color: white;
-    width: 200px; 
-    text-align: center; 
+    max-width: 145px; 
     position: relative;
-    left: 70px;
+    left: 100px;
     top: 40px;  
-    height: 25px; 
+    height: 40px; 
+    text-align: center;
     padding-top: 5px;
 }
 
-.choix 
 
+.choix
 { 
-
-    border:1px #efeff1; 
+    border:1px solid #d8d8d8 ; 
     border-radius: 15px;
-    box-shadow: 2px 2px 10px grey;  
-    height: 50px; 
-    width: 360px; 
-    background-color:#efeff1; 
-    text-align: center; 
-    margin-left: 10px; 
-    
+    box-shadow: 2px 2px 10px #d8d8d8 ;  
+    height: 40px; 
+    min-width: 360px; 
+    background-color:#F8F8F8; 
+    padding-top: 20px;  
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
 } 
 
 .menu 
 {
-    border:1px#efeff1; 
+    border:1px solid #d8d8d8 ;  
     border-radius: 15px;  
-    box-shadow: 2px 2px 10px grey; 
-    height: 50px; 
-    width: 360px; 
-    background-color :#efeff1; 
+    box-shadow: 2px 2px 10px #d8d8d8; 
+    height: 40px; 
+    min-width: 360px;
+    background-color :#F8F8F8; 
     text-align: center; 
-    margin-left: 10px;  
-    margin-top: 10px;
-}
- 
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+} 
+
 
 .resto 
 
 { 
-    border:1px gainsboro solid; 
+    border:1px solid #d8d8d8 ;  
     border-radius: 15px; 
-    box-shadow: 2px 2px 10px grey;  
-    height: 50px; 
-    width: 360px; 
+    box-shadow: 2px 2px 10px #d8d8d8;  
+    height: 40px; 
+    min-width: 360px;
     background-color:#EFE6F5; 
     text-align: center; 
-    margin-left: 10px; 
-    margin-top: 10px;  
+    padding-top: 20px;
+    display:flex;
+    justify-content: space-around;
 } 
 
-.nombre
+.un 
 {
     position: relative;
-    right: 90px;
-    top: 10px;
-}
-.imag 
-
-{ 
+    right: 35px;
+   height: 20px;
+   
+}   
+.deux
+{
     position: relative;
-    right: 67px;
-    top: 10px;
+    right: 35px;
+    height: 20px;
 } 
-
-.bouffe
+.trois
 {
-
-    background-color:#f5f5f5;
-    height: 1050px;
     position: relative;
-    top:50px;
-    
+    right: 35px;
+    height: 20px;
+} 
+.fonctionnality
+{
+    width: 180px;
+    text-align: justify;
+    position: relative;
+    right: 40px;
 }
+
+
+.imag-tel
+{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    right: 50px; 
+}
+.imag-menu
+{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    right: 50px;
+}
+.imag-maison
+{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    right: 50px;
+}
+
+
 .bord
 {
     border: 1px white solid;
@@ -192,7 +347,9 @@ body
     position: relative;
     left: 10px;
     bottom: 10px;
+    
 }
+
 .bord1
 {
     border: 1px white solid;
@@ -226,35 +383,60 @@ body
     left: 10px;
     bottom: 10px;
 }
-.case
+.far fa-heart
 {
+    
+    width: 20px;
+    height: 20px;
+   
+}
+.heart
+{
+    position: relative;
 
-    position: relative;
-    left: 205px;
-    top: 10px;
+    left: 310px;
+    bottom: 30px;
 }
-.case6
+.case:hover
+{
+    color:#F37DE8 ;
+}
+a
+{
+    text-decoration: none;
+}
+.imag-menu1
 {
     position: relative;
-    left: 322px;
-    bottom: 50px;
+    left: 70px;
+    width: 20px;
+    height: 20px;
 }
-.case3
+.imag-menu2
 {
     position: relative;
-    top:10px;
-    left: 215px;
+    left: 60px;
+    width: 20px;
+    height: 20px;
 }
-.case4
+
+.alafrançaise
 {
-    position: relative;
-    left: 190px;
-    top:10px;
+  
+    background-color:blue ;
 }
+
 .new
 {
+    text-decoration:none;
     position: relative;
-    left: 310px;
+    left: 300px;
+    bottom: 180px;
+    background-color: #99E2D0;
+    width: 60px;
+    color: #094486;
+    font-size: 0.8rem;
+    text-align: center;
 }
 .nouveau
 {
@@ -274,17 +456,20 @@ body
     border: 1px #f5f5f5 solid;
     background-color: #f5f5f5;
     border-radius: 40px;
+    background-position: no-repeat;
 }
-.alafrançaise
+.imag-alafrançaise
 {
+    font-family: 'Shrikhand', cursive;
     position: relative;
     top:15px;
+   
 }
 .btn-blanc
 {
     border:1px white; 
     border-radius: 12px;  
-    box-shadow: 2px 2px 10px grey; 
+    box-shadow: 2px 2px 10px #ebebec; 
     height: 65px; 
     width: 340px; 
     background-color :white; 
@@ -292,11 +477,9 @@ body
     margin-top: 10px;
 
 }
-.recule
+#bloc-header-menu
 {
-    position: relative;
-    bottom: 10px;
-    right: 10px;
+    display: flex;
 }
 .prix
 {
@@ -308,15 +491,8 @@ body
 {
     border-bottom: 3px solid #99E2D0;
 }
-@font-face {
-    font-family: 'ambleregular';
-    src: url('amble-regular-webfont.woff2') format('woff2'),
-         url('amble-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-<<<<<<< HEAD
+h1
+{
+    font-family: 'Shrikhand', cursive;
+    animation: fadein 2s;
 }
-=======
-}
->>>>>>> ac63434a1cd91604996431ccae5b32c823262bbf
